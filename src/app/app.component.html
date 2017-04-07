@@ -1,3 +1,18 @@
 <h1>
-  {{title}}
+    {{title}}
 </h1>
+<ui-button>
+    <ui-icon icon=""></ui-icon>
+    Hello There
+</ui-button>
+<ui-button buttonType="compound" (click)="alert()">
+    <ui-icon icon="plus"></ui-icon>
+    Hello There
+    <ui-button-description>
+        Description of the action that is performed when clicking.
+    </ui-button-description>
+</ui-button>
+
+<ui-icon icon="at"></ui-icon>
+
+<ui-breadcrumb [linkItems]="linkItems$" (itemClick)="linkItemClicked($event)"></ui-breadcrumb>

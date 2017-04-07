@@ -1,0 +1,9 @@
+<button [disabled]="disabled" [ngClass]="buttonClasses">
+  <span class="ms-Button-icon">
+    <ng-content select="ui-icon"></ng-content>
+  </span>
+  <span class="ms-Button-label">
+    <ng-content></ng-content>
+  </span>
+  <ng-content select="ui-button-description" *ngIf="buttonType === 'compound'"></ng-content>
+</button>
